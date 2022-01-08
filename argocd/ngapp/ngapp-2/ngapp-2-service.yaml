@@ -9,7 +9,7 @@ spec:
   selector:
     app: ngapp-2
   ports:
-  - nodePort: 30021
+  - nodePort: 30012
     protocol: TCP
     port: 80
     targetPort: 80
