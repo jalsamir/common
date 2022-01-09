@@ -40,7 +40,7 @@ spec:
           ports:
             - containerPort: 80
           volumeMounts:
-            - name: nginx-index-file
+            - name: ngapp-1-index-file
               mountPath: /usr/share/nginx/html/
       volumes:
       - name: ngapp-1-index-file
