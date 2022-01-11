@@ -2,12 +2,10 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: ngapp-1
-  namespace: apps
-  finalizers:
-  - resources-finalizer.argocd.argoproj.io
+  namespace: applications
 spec:
   destination:
-    namespace: app
+    namespace: applications
     server: https://kubernetes.default.svc
   project: default
   source:
