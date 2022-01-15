@@ -9,7 +9,7 @@ spec:
   selector:
     app: kustomapp
   ports:
-  - nodePort: 31021
+  - nodePort: 31031
     protocol: TCP
     port: 80
     targetPort: 80
