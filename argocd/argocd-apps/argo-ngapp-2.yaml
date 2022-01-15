@@ -9,6 +9,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: argocd/ngapp/ngapp-2
+    path: ngapp/ngapp-2
     repoURL: https://github.com/jalsamir/common.git
     targetRevision: HEAD
