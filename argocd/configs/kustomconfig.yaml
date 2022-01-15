@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-cm
+  namespace: argocd
+  labels:
+    app.kubernetes.io/name: argocd-cm
+    app.kubernetes.io/part-of: argocd
+data:
+    kustomize.path.v3.5.1: /custom-tools/kustomize_3_5_1
+    kustomize.path.v3.5.4: /custom-tools/kustomize_3_5_4
+    kustomize.path.v4.2.0: /custom-tools/kustomize_4_2_0 

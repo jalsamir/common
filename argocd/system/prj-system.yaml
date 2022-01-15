@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: operations
+  namespace: argocd
+spec:
+  description: operation project
+  sourceRepos:
+    - https://github.com/jalsamir/common.git
+  destinations:
+  -  namespace: argocd
+     server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+  - group: ''
+    kind: 'NameSpace'
+  - group: 'rbac.authorization.k8s.io'
+    kind: 'ClusterRole'
+  - group: 'rbac.authorization.k8s.io'
+    kind: 'ClusterRoleBinding'
