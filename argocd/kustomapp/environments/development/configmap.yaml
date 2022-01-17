@@ -4,5 +4,10 @@ metadata:
   name: kustomapp-configmap
   labels:
     app: kustomapp
-spec:
-  namespace: developement
+data:
+  index.html: |
+    <html>
+    <h1>Welcome</h1>
+    </br>
+    <h1 style="background-color:MediumSeaGreen;">Green Deployment</h1>
+    </html>  mespace: developement
