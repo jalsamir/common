@@ -9,6 +9,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: argocd/kustomapp/environmentes/developments
+    path: argocd/kustomapp/environments/developments
     repoURL: https://github.com/jalsamir/common.git
     targetRevision: HEAD
