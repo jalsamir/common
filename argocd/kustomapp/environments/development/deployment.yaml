@@ -1,13 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kustomapp
+  name: kustomapp-devlopment
   labels:
     app: kustomapp
 spec:
   selector:
     matchLabels:
       app: kustomapp
-  namespace: developement
+  namespace: argocd
   template:
-    namespace: developement
+    namespace: argocd
