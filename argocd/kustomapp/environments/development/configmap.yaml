@@ -4,3 +4,5 @@ metadata:
   name: kustomapp-dev-configmap
   labels:
     app: kustomapp
+spec:
+  namespace: developement

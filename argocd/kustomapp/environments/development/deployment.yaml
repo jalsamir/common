@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kustomapp
+  labels:
+    app: kustomapp
+spec:
+  selector:
+    matchLabels:
+      app: kustomapp
+  namespace: developement
+  template:
+    namespace: developement

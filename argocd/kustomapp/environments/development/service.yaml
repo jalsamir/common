@@ -6,6 +6,7 @@ metadata:
     app: kustomapp
 spec:
   type: NodePort
+  namespace: developement
   selector:
     app: kustomapp
   ports:
