@@ -4,10 +4,10 @@ metadata:
   labels:
     app.kubernetes.io/instance: kustomapp
   name: kustomapp-1
-  namespace: development
+  namespace: argocd
 spec:
   destination:
-    namespace: development
+    namespace: argocd
     server: 'https://kubernetes.default.svc'
   project: default
   source:
