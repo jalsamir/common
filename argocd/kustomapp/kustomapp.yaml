@@ -2,9 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: kustomapp-1
-  namespace: development 
-  finalizers:
-  - resources-finalizer.argocd.argoproj.io
+  namespace: development
 spec:
   destination: 
     namespace: development
