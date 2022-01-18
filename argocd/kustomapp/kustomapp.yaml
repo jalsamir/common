@@ -4,6 +4,7 @@ metadata:
   labels:
     app.kubernetes.io/instance: kustomapp
   name: kustomapp-1
+  namespace: development
 spec:
   destination:
     namespace: development
