@@ -2,10 +2,10 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: kustomapp-devlopment
-  namespace: argocd
+  namespace: developement
 spec:
   destination:
-    namespace: argocd
+    namespace: developement
     server: https://kubernetes.default.svc
   project: default
   source:
